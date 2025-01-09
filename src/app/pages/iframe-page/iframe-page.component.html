@@ -1,0 +1,13 @@
+<div class="game-border" [class]="frameCurrentStateClassName">
+  <ngx-chess-board
+    #chessBoard
+    [size]="400"
+    [lightTileColor]="'#f0d9b5'"
+    [darkTileColor]="'#b58863'"
+    [showCoords]="true"
+    [showLegalMoves]="true"
+    [lightDisabled]="lightDisabled"
+    [darkDisabled]="darkDisabled"
+    (moveChange)="onPieceMoved($event)"
+  ></ngx-chess-board>
+</div>

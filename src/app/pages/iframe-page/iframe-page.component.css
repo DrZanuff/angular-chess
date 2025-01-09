@@ -1,0 +1,9 @@
+.player-active {
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+.player-inactive {
+  border: 2px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+}

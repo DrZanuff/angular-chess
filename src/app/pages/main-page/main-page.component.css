@@ -1,0 +1,19 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.iframe-container {
+  display: flex;
+  gap: 20px;
+}
+
+iframe {
+  width: 420px;
+  height: 420px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
