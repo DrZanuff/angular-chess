@@ -58,9 +58,15 @@ export class IframePageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
-    this.chessBoard.setFEN(
-      '4k1n1/p1p2pp1/P1n2P1B/2bp4/3Pp2P/2Kb4/3r4/1r6 b - - 0 1'
-    );
+    const savedFen = localStorage.getItem('gameState_player');
+    if (savedFen) {
+      this.chessBoard.setFEN(savedFen); // Set the saved FEN if it exists
+    }
+
+    // Debug Check Mate State
+    // this.chessBoard.setFEN(
+    //   '4k1n1/p1p2pp1/P1n2P1B/2bp4/3Pp2P/2Kb4/3r4/1r6 b - - 0 1'
+    // );
     this.updatePlayerState();
 
     if (this.player === 2) {
@@ -101,9 +107,9 @@ export class IframePageComponent implements OnInit, AfterViewInit, OnDestroy {
       if (this.player === 2) {
         this.chessBoard.reverse();
       }
-      // Let's make a Check mate or a Stale here
       this.updatePlayerState();
       this.checkForEndGame();
+      localStorage.setItem('gameState_player', payload.fen);
     }
   }
 
