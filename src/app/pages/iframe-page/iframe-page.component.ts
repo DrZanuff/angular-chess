@@ -27,7 +27,7 @@ type PostMessagePayload = {
   standalone: true,
   imports: [NgxChessBoardModule],
   templateUrl: './iframe-page.component.html',
-  styleUrls: ['./iframe-page.component.css'],
+  styleUrl: './iframe-page.component.css',
 })
 export class IframePageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('chessBoard', { static: false }) chessBoard!: NgxChessBoardView;

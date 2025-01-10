@@ -1,66 +1,59 @@
-# Angular Chess Project
+# AngularChess
 
-This project is a web-based chess application built using Angular. The application supports playing chess on an interactive board and features functionalities such as FEN-based state saving and game state persistence using LocalStorage.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
-## Features
+## Development server
 
-- **Interactive Chess Board**: A visually appealing and functional chessboard interface.
-- **Two-Player Mode**: Allows two players to compete in real-time using iframes for separate views.
-- **Game State Persistence**: Saves the game state in LocalStorage, enabling users to resume their game if they close the browser.
-- **Game End Detection**: Detects and announces events like checkmate.
-- **Responsive Design**: Optimized for different screen sizes.
+To start a local development server, run:
 
-## Technologies Used
+```bash
+ng serve
+```
 
-### Framework
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-- **Angular**: The core framework for building the application.
+## Code scaffolding
 
-### Libraries
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-- [**ngx-chess-board**](https://github.com/grzegorz103/ngx-chess-board): Used for rendering the chessboard and handling chess piece movement.
-- [**chess.js**](https://github.com/jhlywa/chess.js): A powerful library for chess logic and game rules implementation.
+```bash
+ng generate component component-name
+```
 
-## Setup Instructions
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-### Prerequisites
+```bash
+ng generate --help
+```
 
-- Node.js (v16 or later)
-- Angular CLI (v15 or later)
+## Building
 
-### Installation
+To build the project run:
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd <project-directory>
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+ng build
+```
 
-### Running the Application
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-1. Start the development server:
-   ```bash
-   ng serve
-   ```
-2. Open your browser and navigate to:
-   ```
-   http://localhost:4200
-   ```
+## Running unit tests
 
-## License
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+```bash
+ng test
+```
 
-## Acknowledgments
+## Running end-to-end tests
 
-Special thanks to the maintainers of:
+For end-to-end (e2e) testing, run:
 
-- [ngx-chess-board](https://github.com/grzegorz103/ngx-chess-board) for the chessboard component.
-- [chess.js](https://github.com/jhlywa/chess.js) for chess logic handling.
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
