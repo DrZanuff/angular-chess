@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-main-page',
   imports: [GameOverOverlayComponent, CommonModule],
   templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.css',
+  styleUrls: ['./main-page.component.css'],
 })
 export class MainPageComponent implements OnInit, OnDestroy {
   isGameOver = false;
